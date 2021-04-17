@@ -1,0 +1,48 @@
+* {
+  margin-top: 25px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: yellow;
+}
+
+body {
+  text-align: center;
+}
+
+#cube,
+#mencircule {
+  animation: cube 5s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+@keyframes cube {
+  from {
+    transform: rotateZ(0 deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+#smallcircule {
+  animation: small 5s linear infinite;
+  transform-origin: center;
+  transform-box: ;
+}
+@keyframes small {
+  from {
+    transform: rotate(0deg) translateX(0px) rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg) translateX(160px) rotate(160deg);
+  }
+}
+/* @keyframes small {
+  from {
+    transform: rotateZ(0 deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+} */
